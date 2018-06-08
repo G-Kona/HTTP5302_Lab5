@@ -1,0 +1,10 @@
+.guestBlock {
+    background-color: #607d8b;
+    border: 5px solid #373737;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.guestBlock ul {
+    list-style-type: none;
+}

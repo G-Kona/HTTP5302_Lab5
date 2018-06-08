@@ -1,0 +1,16 @@
+<div *ngIf="guests">
+    guests is defined
+
+    <input [(ngModel)]="searchFilter" placeholder=”firstName”>
+    <button (click)="search()">Search!</button>
+    <div>{{searchFilter}}</div>
+
+    <div *ngFor="let g of guests" class="guestBlock">
+        <ul>
+            <li>{{g.id}}</li>
+            <li>{{g.firstName}} {{g.lastName}}</li>
+            <li>{{g.dateOfBirth}}</li>
+            <li>{{getAge(g.dateOfBirth)}}</li>
+        </ul>
+    </div>
+</div>
